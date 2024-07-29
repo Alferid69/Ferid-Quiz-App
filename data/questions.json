@@ -1,0 +1,378 @@
+{
+  "geographyQuestions": [
+    {
+      "question": "What is the capital of France?",
+      "options": ["Berlin", "Madrid", "Paris", "Rome"],
+      "correctOption": 2
+    },
+    {
+      "question": "Which river is the longest in the world?",
+      "options": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+      "correctOption": 0
+    },
+    {
+      "question": "Mount Everest is located in which mountain range?",
+      "options": ["Rockies", "Himalayas", "Andes", "Alps"],
+      "correctOption": 1
+    },
+    {
+      "question": "Which country has the most natural lakes?",
+      "options": ["Canada", "USA", "Russia", "Brazil"],
+      "correctOption": 0
+    },
+    {
+      "question": "What is the smallest country in the world?",
+      "options": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+      "correctOption": 1
+    },
+    {
+      "question": "Which desert is the largest in the world?",
+      "options": ["Sahara", "Gobi", "Arabian", "Kalahari"],
+      "correctOption": 0
+    },
+    {
+      "question": "What is the longest river in Europe?",
+      "options": ["Danube", "Volga", "Rhine", "Thames"],
+      "correctOption": 1
+    },
+    {
+      "question": "Which country is known as the Land of the Rising Sun?",
+      "options": ["China", "Thailand", "Japan", "South Korea"],
+      "correctOption": 2
+    },
+    {
+      "question": "What is the largest island in the world?",
+      "options": ["Greenland", "New Guinea", "Borneo", "Madagascar"],
+      "correctOption": 0
+    },
+    {
+      "question": "Which continent is the Sahara Desert located on?",
+      "options": ["Asia", "South America", "Africa", "Australia"],
+      "correctOption": 2
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+      "correctOption": 2
+    },
+    {
+      "question": "Which ocean is the largest?",
+      "options": ["Atlantic", "Indian", "Southern", "Pacific"],
+      "correctOption": 3
+    },
+    {
+      "question": "What is the tallest waterfall in the world?",
+      "options": [
+        "Niagara Falls",
+        "Angel Falls",
+        "Victoria Falls",
+        "Iguazu Falls"
+      ],
+      "correctOption": 1
+    },
+    {
+      "question": "Which country is the largest by land area?",
+      "options": ["USA", "China", "Canada", "Russia"],
+      "correctOption": 3
+    },
+    {
+      "question": "What is the driest place on Earth?",
+      "options": [
+        "Atacama Desert",
+        "Sahara Desert",
+        "Gobi Desert",
+        "Antarctica"
+      ],
+      "correctOption": 0
+    }
+  ],
+
+  "historyQuestions": [
+    {
+      "question": "Who was the first President of the United States?",
+      "options": [
+        "George Washington",
+        "Thomas Jefferson",
+        "Abraham Lincoln",
+        "John Adams"
+      ],
+      "correctOption": 0
+    },
+    {
+      "question": "In which year did World War II end?",
+      "options": ["1945", "1939", "1941", "1944"],
+      "correctOption": 0
+    },
+    {
+      "question": "Who discovered America?",
+      "options": [
+        "Christopher Columbus",
+        "Leif Erikson",
+        "Ferdinand Magellan",
+        "James Cook"
+      ],
+      "correctOption": 0
+    },
+    {
+      "question": "What was the name of the ship that brought the Pilgrims to America?",
+      "options": ["Santa Maria", "Mayflower", "Endeavour", "Beagle"],
+      "correctOption": 1
+    },
+    {
+      "question": "Which ancient civilization built the pyramids?",
+      "options": ["Romans", "Greeks", "Egyptians", "Persians"],
+      "correctOption": 2
+    },
+    {
+      "question": "Who wrote the Declaration of Independence?",
+      "options": [
+        "George Washington",
+        "John Adams",
+        "Benjamin Franklin",
+        "Thomas Jefferson"
+      ],
+      "correctOption": 3
+    },
+    {
+      "question": "In which year did the Titanic sink?",
+      "options": ["1912", "1905", "1915", "1920"],
+      "correctOption": 0
+    },
+    {
+      "question": "Who was the British Prime Minister during World War II?",
+      "options": [
+        "Neville Chamberlain",
+        "Winston Churchill",
+        "Clement Attlee",
+        "Harold Wilson"
+      ],
+      "correctOption": 1
+    },
+    {
+      "question": "Which empire was known as the 'Empire on which the sun never sets'?",
+      "options": [
+        "Roman Empire",
+        "British Empire",
+        "Mongol Empire",
+        "Ottoman Empire"
+      ],
+      "correctOption": 1
+    },
+    {
+      "question": "Who was the first Emperor of Rome?",
+      "options": ["Julius Caesar", "Augustus", "Nero", "Tiberius"],
+      "correctOption": 1
+    },
+    {
+      "question": "Which battle marked the end of Napoleon's rule?",
+      "options": [
+        "Battle of Trafalgar",
+        "Battle of Leipzig",
+        "Battle of Austerlitz",
+        "Battle of Waterloo"
+      ],
+      "correctOption": 3
+    },
+    {
+      "question": "Who was the first woman to fly solo across the Atlantic Ocean?",
+      "options": [
+        "Amelia Earhart",
+        "Harriet Quimby",
+        "Bessie Coleman",
+        "Jacqueline Cochran"
+      ],
+      "correctOption": 0
+    },
+    {
+      "question": "In which year did the Berlin Wall fall?",
+      "options": ["1989", "1987", "1991", "1993"],
+      "correctOption": 0
+    },
+    {
+      "question": "Who was known as the 'Mad Monk' of Russia?",
+      "options": ["Rasputin", "Lenin", "Trotsky", "Stalin"],
+      "correctOption": 0
+    },
+    {
+      "question": "Which city was the first capital of the United States?",
+      "options": ["New York", "Philadelphia", "Washington D.C.", "Boston"],
+      "correctOption": 1
+    }
+  ],
+
+  "mathsQuestions": [
+    {
+      "question": "What is the value of π (pi) to two decimal places?",
+      "options": ["3.12", "3.14", "3.16", "3.18"],
+      "correctOption": 1
+    },
+    {
+      "question": "Solve: 5 + 7 × 2",
+      "options": ["19", "24", "26", "29"],
+      "correctOption": 0
+    },
+    {
+      "question": "What is the square root of 144?",
+      "options": ["10", "11", "12", "13"],
+      "correctOption": 2
+    },
+    {
+      "question": "Solve for x: 2x + 3 = 11",
+      "options": ["4", "5", "6", "7"],
+      "correctOption": 0
+    },
+    {
+      "question": "What is the derivative of x²?",
+      "options": ["x", "2x", "x²", "2x²"],
+      "correctOption": 1
+    },
+    {
+      "question": "What is 15% of 200?",
+      "options": ["25", "30", "35", "40"],
+      "correctOption": 1
+    },
+    {
+      "question": "What is the value of sin(90°)?",
+      "options": ["0", "0.5", "1", "undefined"],
+      "correctOption": 2
+    },
+    {
+      "question": "Solve: 8 ÷ 2(2 + 2)",
+      "options": ["1", "8", "16", "32"],
+      "correctOption": 2
+    },
+    {
+      "question": "What is the sum of the angles in a triangle?",
+      "options": ["90°", "180°", "270°", "360°"],
+      "correctOption": 1
+    },
+    {
+      "question": "Solve for y: y/3 = 12",
+      "options": ["4", "8", "24", "36"],
+      "correctOption": 3
+    },
+    {
+      "question": "What is the area of a circle with radius 7?",
+      "options": ["49π", "14π", "28π", "21π"],
+      "correctOption": 0
+    },
+    {
+      "question": "What is the value of log₁₀(100)?",
+      "options": ["1", "2", "10", "100"],
+      "correctOption": 1
+    },
+    {
+      "question": "Solve: 3³",
+      "options": ["6", "9", "27", "81"],
+      "correctOption": 2
+    },
+    {
+      "question": "What is the perimeter of a square with side length 5?",
+      "options": ["10", "15", "20", "25"],
+      "correctOption": 2
+    },
+    {
+      "question": "What is the value of 4! (4 factorial)?",
+      "options": ["12", "16", "24", "32"],
+      "correctOption": 2
+    }
+  ],
+
+  "generalKnowledgeQuestions": [
+    {
+      "question": "What is the tallest building in the world?",
+      "options": [
+        "Shanghai Tower",
+        "Burj Khalifa",
+        "Abraj Al-Bait Clock Tower",
+        "One World Trade Center"
+      ],
+      "correctOption": 1
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+      "correctOption": 1
+    },
+    {
+      "question": "Who wrote the play 'Romeo and Juliet'?",
+      "options": [
+        "Mark Twain",
+        "William Shakespeare",
+        "Jane Austen",
+        "Charles Dickens"
+      ],
+      "correctOption": 1
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "options": ["Au", "Ag", "Pb", "Pt"],
+      "correctOption": 0
+    },
+    {
+      "question": "Which country hosted the 2016 Summer Olympics?",
+      "options": ["China", "Brazil", "United Kingdom", "Russia"],
+      "correctOption": 1
+    },
+    {
+      "question": "What is the largest mammal in the world?",
+      "options": ["Elephant", "Blue Whale", "Great White Shark", "Giraffe"],
+      "correctOption": 1
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "options": [
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Leonardo da Vinci",
+        "Claude Monet"
+      ],
+      "correctOption": 2
+    },
+    {
+      "question": "What is the capital city of Japan?",
+      "options": ["Seoul", "Tokyo", "Beijing", "Bangkok"],
+      "correctOption": 1
+    },
+    {
+      "question": "Which element has the atomic number 1?",
+      "options": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
+      "correctOption": 1
+    },
+    {
+      "question": "What is the hardest natural substance on Earth?",
+      "options": ["Gold", "Iron", "Diamond", "Platinum"],
+      "correctOption": 2
+    },
+    {
+      "question": "In which year did the first man land on the moon?",
+      "options": ["1965", "1967", "1969", "1971"],
+      "correctOption": 2
+    },
+    {
+      "question": "What is the smallest planet in our solar system?",
+      "options": ["Earth", "Mars", "Mercury", "Venus"],
+      "correctOption": 2
+    },
+    {
+      "question": "What is the longest river in the world?",
+      "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+      "correctOption": 1
+    },
+    {
+      "question": "Who is known as the Father of Computers?",
+      "options": [
+        "Alan Turing",
+        "Charles Babbage",
+        "John von Neumann",
+        "Bill Gates"
+      ],
+      "correctOption": 1
+    },
+    {
+      "question": "Which country is known as the Land of the Rising Sun?",
+      "options": ["China", "Thailand", "Japan", "South Korea"],
+      "correctOption": 2
+    }
+  ]
+}

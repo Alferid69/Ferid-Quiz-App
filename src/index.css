@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.answer:not([disabled]):hover {
+  transform: translateX(1.2rem);
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 1fr 10%;
+}
+
+.correct{
+  background-color: green;
+}
