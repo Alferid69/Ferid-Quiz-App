@@ -71,7 +71,7 @@ function App() {
     state;
 
   const numberOfQuestions = questions.length;
-  const maxPoints = numberOfQuestions * 10;
+  const maxPoints = 150;
 
   useEffect(
     function () {
