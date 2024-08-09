@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Ferid-Quiz-App/static/css/main.88889ba3.css",
+    "main.js": "/Ferid-Quiz-App/static/js/main.b268befd.js",
+    "index.html": "/Ferid-Quiz-App/index.html",
+    "main.88889ba3.css.map": "/Ferid-Quiz-App/static/css/main.88889ba3.css.map",
+    "main.b268befd.js.map": "/Ferid-Quiz-App/static/js/main.b268befd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88889ba3.css",
+    "static/js/main.b268befd.js"
+  ]
+}
