@@ -11,6 +11,7 @@ import Controls from "./Controls";
 import Progress from "./Progress";
 import End from "./End";
 import Loader from "./Loader";
+import Copyright from "./Copyright";
 
 const initialState = {
   status: "selecting",
@@ -132,7 +133,7 @@ function App() {
           )}
           {status === "finished" && <End />}
         </Main>
-        <Footer>{status === "active" && <Controls />}</Footer>
+        <Footer>{status === "active" ? <Controls /> : <Copyright />}</Footer>
       </div>
     </QuizContext.Provider>
   );
