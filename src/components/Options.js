@@ -1,9 +1,14 @@
-function Options({ questions, dispatch, index, answer }) {
+import { useContext } from "react";
+import { QuizContext } from "./App";
+
+function Options() {
+  const { questions, dispatch, index, answer } = useContext(QuizContext);
+
   const isDisabled = answer !== null;
   const translateStyle = {
-    transform: "translateX(50px)"
-  }
-  const currentQuestion = questions.at(index)
+    transform: "translateX(50px)",
+  };
+  const currentQuestion = questions.at(index);
   // console.log(questions.at(index).correctOption);
 
   return (
@@ -17,7 +22,7 @@ function Options({ questions, dispatch, index, answer }) {
               ? "bg-danger"
               : ""
           }`}
-          style={answer===i ? translateStyle : null}
+          style={answer === i ? translateStyle : null}
           onClick={() => dispatch({ type: "newAnswer", payload: i })}
           disabled={isDisabled}
           key={option}

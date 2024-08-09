@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from "react";
+import { createContext, useEffect, useReducer } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Header";
 import Main from "./Main";
@@ -19,7 +19,7 @@ const initialState = {
   index: 0,
   answer: null,
   points: 0,
-  time: 300
+  time: 300,
 };
 function reducer(state, action) {
   switch (action.type) {
@@ -49,8 +49,8 @@ function reducer(state, action) {
       return { ...state, index: state.index + 1, answer: null };
     case "lastQuestion":
       return { ...state, questions: [], status: "finished" };
-    case 'counter' :
-      return {...state, time: state.time -1}
+    case "counter":
+      return { ...state, time: state.time - 1 };
     default:
       break;
   }
@@ -62,9 +62,12 @@ subject.set("historyQuestions", "HISTORY");
 subject.set("mathsQuestions", "MATTHEMATICS");
 subject.set("generalKnowledgeQuestions", "GENERAL KNOWLEDGE");
 
+export const QuizContext = createContext();
+
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const { status, questionType, questions, index, answer, points, time } = state;
+  const { status, questionType, questions, index, answer, points, time } =
+    state;
 
   const numberOfQuestions = questions.length;
   const maxPoints = numberOfQuestions * 10;
@@ -72,13 +75,13 @@ function App() {
   useEffect(
     function () {
       let isMounted = true;
-    
+
       async function fetchQuestions() {
         if (questionType === null) return;
-      
+
         try {
           dispatch({ type: "loading" });
-          const res = await fetch(`http://localhost:8000/${questionType}`);
+          const res = await fetch(`https://questions-server-i7ot.onrender.com/${questionType}`);
           const data = await res.json();
           // console.log(data);
           if (isMounted) {
@@ -90,9 +93,9 @@ function App() {
           }
         }
       }
-    
+
       fetchQuestions();
-    
+
       return () => {
         isMounted = false;
       };
@@ -101,40 +104,37 @@ function App() {
   );
 
   return (
-    <div className="container bg-primary app">
-      <Header />
-      <Main>
-        {status === "selecting" && <QuestionTypes dispatch={dispatch} />}
-        {status === "loading" && <Loader />}
-        {status === "error" && <Error dispatch={dispatch} />}
-        {status === "ready" && (
-          <Start
-            dispatch={dispatch}
-            numberOfQuestions={numberOfQuestions}
-            subject={subject.get(questionType)}
-          />
-        )}
-        {status === "active" && (
-          <>
-            <Progress
-              numberOfQuestions={numberOfQuestions}
-              index={index}
-              points={points}
-              maxPoints={maxPoints}
-            />
-            <Question
-              questions={questions}
-              index={index}
-              dispatch={dispatch}
-              answer={answer}
-              numberOfQuestions={numberOfQuestions}
-            />
-          </>
-        )}
-        {status === "finished" && <End points={points} maxPoints={maxPoints} dispatch={dispatch}/>}
-      </Main>
-      <Footer>{status === "active" && <Controls answer={answer} time={time} dispatch={dispatch} />}</Footer>
-    </div>
+    <QuizContext.Provider
+      value={{
+        dispatch,
+        numberOfQuestions,
+        subject: subject.get(questionType),
+        index,
+        points,
+        maxPoints,
+        questions,
+        answer,
+        time,
+      }}
+    >
+      <div className="container bg-primary app">
+        <Header />
+        <Main>
+          {status === "selecting" && <QuestionTypes />}
+          {status === "loading" && <Loader />}
+          {status === "error" && <Error />}
+          {status === "ready" && <Start />}
+          {status === "active" && (
+            <>
+              <Progress />
+              <Question />
+            </>
+          )}
+          {status === "finished" && <End />}
+        </Main>
+        <Footer>{status === "active" && <Controls />}</Footer>
+      </div>
+    </QuizContext.Provider>
   );
 }
 

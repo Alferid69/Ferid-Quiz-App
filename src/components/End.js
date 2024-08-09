@@ -1,4 +1,9 @@
-function End({ points, maxPoints, dispatch }) {
+import { useContext } from "react";
+import { QuizContext } from "./App";
+
+function End() {
+  const { points, maxPoints, dispatch } = useContext(QuizContext);
+
   const percent = (points / maxPoints) * 100;
   return (
     <div className="d-flex flex-column align-items-center justify-content-center">
@@ -6,7 +11,12 @@ function End({ points, maxPoints, dispatch }) {
       <h5>
         Your Score: {points} out of {maxPoints} ({Math.floor(percent)}%)
       </h5>
-      <button className="btn btn-info" onClick={()=>dispatch({type: 'selecting'})} >Restart Quiz</button>
+      <button
+        className="btn btn-info"
+        onClick={() => dispatch({ type: "selecting" })}
+      >
+        Restart Quiz
+      </button>
     </div>
   );
 }
