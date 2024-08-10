@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Ferid-Quiz-App/static/css/main.88889ba3.css",
-    "main.js": "/Ferid-Quiz-App/static/js/main.20978ac9.js",
+    "main.js": "/Ferid-Quiz-App/static/js/main.f061dadc.js",
     "index.html": "/Ferid-Quiz-App/index.html",
     "main.88889ba3.css.map": "/Ferid-Quiz-App/static/css/main.88889ba3.css.map",
-    "main.20978ac9.js.map": "/Ferid-Quiz-App/static/js/main.20978ac9.js.map"
+    "main.f061dadc.js.map": "/Ferid-Quiz-App/static/js/main.f061dadc.js.map"
   },
   "entrypoints": [
     "static/css/main.88889ba3.css",
-    "static/js/main.20978ac9.js"
+    "static/js/main.f061dadc.js"
   ]
 }
