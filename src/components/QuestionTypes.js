@@ -12,7 +12,6 @@ function QuestionTypes() {
 
   function handleClick(e) {
     e.preventDefault();
-    console.log(e.target.value);
     dispatch({ type: "chooseQuizType", payload: e.target.value });
   }
 

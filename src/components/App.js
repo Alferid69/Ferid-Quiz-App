@@ -52,6 +52,17 @@ function reducer(state, action) {
       return { ...state, questions: [], status: "finished" };
     case "counter":
       return { ...state, time: state.time - 1 };
+    case "restart":
+      return {
+        ...state,
+        status: "selecting",
+        questionType: null,
+        questions: [],
+        index: 0,
+        answer: null,
+        points: 0,
+        time: 300,
+      };
     default:
       break;
   }
@@ -82,7 +93,9 @@ function App() {
 
         try {
           dispatch({ type: "loading" });
-          const res = await fetch(`https://questions-server-i7ot.onrender.com/${questionType}`);
+          const res = await fetch(
+            `https://questions-server-i7ot.onrender.com/${questionType}`
+          );
           const data = await res.json();
           // console.log(data);
           if (isMounted) {

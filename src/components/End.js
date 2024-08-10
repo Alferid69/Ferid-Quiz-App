@@ -13,7 +13,7 @@ function End() {
       </h5>
       <button
         className="btn btn-info"
-        onClick={() => dispatch({ type: "selecting" })}
+        onClick={() => dispatch({ type: "restart" })}
       >
         Restart Quiz
       </button>
